@@ -1,5 +1,4 @@
 import {
-  Configuration,
   Injector,
   Router
 } from '/Users/rares/Documents/Projects/NPM Packages/adr-express-ts/lib';
@@ -15,25 +14,20 @@ const expressApp = Express();
 // The injections must be in the order
 // Variables -> Middlwares -> Functions Results -> Functions -> Classes
 
-// Global Variables
-Injector.inject(
-  'Configuration',
-  {
-    root: __dirname,
-    apiPrefix: '/api',
-    debug: {
-      log: console.log,
-      error: console.error
-    },
-    renderEngine: {
-      path: '/',
-      directory: ['public']
-    },
-    errorHandler: undefined /* If undefined, the default error handler will be used. */,
-    notFoundHandler: undefined /* If undefined, the default not found handler will be used. */
-  } as Configuration,
-  InjectType.Variable
-);
+Injector.setup({
+  root: __dirname,
+  apiPrefix: '/api',
+  debug: {
+    log: console.log,
+    error: console.error
+  },
+  staticFiles: {
+    path: '/',
+    directory: ['public']
+  },
+  errorHandler: undefined /* If undefined, the default error handler will be used. */,
+  notFoundHandler: undefined /* If undefined, the default not found handler will be used. */
+});
 
 // __EADIT_CLI_PLACEHOLDER_INJECT_VARS
 
@@ -59,9 +53,6 @@ Injector.inject(
 
 // The core.
 Injector.inject('Express', expressApp, InjectType.Variable);
-
-// Inject Function's result
-// Injector.inject('ExpressApp', Express, InjectType.FunctionResult); -- Removed to add Tests
 
 // Inject Classes
 Injector.inject('Server', Server);

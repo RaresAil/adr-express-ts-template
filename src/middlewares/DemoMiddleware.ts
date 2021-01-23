@@ -3,7 +3,7 @@ import { Inject } from '../../../adr-express-ts/lib';
 import { Middleware } from '../../../adr-express-ts/lib/@types';
 
 @Inject
-export default class AuthentificationMiddleware implements Middleware {
+export default class DemoMiddleware implements Middleware {
   public async middleware(
     req: Request,
     res: Response,

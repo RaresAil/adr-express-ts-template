@@ -36,19 +36,12 @@ export default class DemoAction {
   }
 
   @Get()
-  public err(
-    @Request req: ExpressRequest,
-    @Response res: ExpressResponse,
-    @Next next: NextFunction
-  ): any {
+  public err(@Next next: NextFunction): any {
     return next('Da');
   }
 
   @Post()
-  public async saveX(
-    @Request req: ExpressRequest,
-    @Response res: ExpressResponse
-  ): Promise<any> {
+  public async saveX(@Response res: ExpressResponse): Promise<any> {
     const dataFromDatabase = await this.domain!.test('parameter from action');
     return this.responder!.demo(res, 201, dataFromDatabase);
   }

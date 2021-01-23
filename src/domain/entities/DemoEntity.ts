@@ -7,7 +7,16 @@ export default class DemoEntity implements InjectedEntity {
   @Retrive('Mongoose')
   private mongoose?: any;
 
+  // -- For Tests --
+  private _loaded: boolean = false;
+
+  public get IsLoaded() {
+    return this._loaded;
+  }
+
   async onLoad(): Promise<void> {
+    this._loaded = true; // -- For Tests --
+
     if (!this.mongoose) {
       return;
     }
