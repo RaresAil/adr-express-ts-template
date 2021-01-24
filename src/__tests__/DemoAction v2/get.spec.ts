@@ -4,11 +4,11 @@ import { GetDemoResponse } from '../@types/app';
 
 const { app } = global._testEnv;
 
-describe('GET /api/v1/demo/demo1', () => {
+describe('GET /api/v2/demo/demo1', () => {
   let response: ChaiHttp.Response;
 
   before(async () => {
-    response = await chai.request(app).get('/api/demo/demo1');
+    response = await chai.request(app).get('/api/v2/demo/demo1');
   });
 
   it('Should be successfully', async () => {

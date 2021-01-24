@@ -8,7 +8,7 @@ describe('GET /api/v1/demo/demo1', () => {
   let response: ChaiHttp.Response;
 
   before(async () => {
-    response = await chai.request(app).get('/api/demo/demo1');
+    response = await chai.request(app).get('/api/v1/demo/demo1');
   });
 
   it('Should be successfully', async () => {

@@ -1,5 +1,5 @@
+import { Inject, Responder } from 'adr-express-ts';
 import { Response } from 'express';
-import { Inject, Responder } from '../../../adr-express-ts/lib';
 
 @Inject
 @Responder('Demo')

@@ -1,4 +1,4 @@
-import { Domain, Inject } from '../../../adr-express-ts/lib';
+import { Domain, Inject } from 'adr-express-ts';
 
 @Inject
 @Domain('Demo')

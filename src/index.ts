@@ -1,10 +1,9 @@
-import {
-  Injector,
-  Router
-} from '/Users/rares/Documents/Projects/NPM Packages/adr-express-ts/lib';
-import { InjectType } from '../../adr-express-ts/lib/@types';
+import { InjectType } from 'adr-express-ts/lib/@types';
+import { Injector, Router } from 'adr-express-ts';
 import bodyParser from 'body-parser';
 import Express from 'express';
+
+// __EADIT_CLI_PLACEHOLDER_IMPORTS
 
 import DemoMiddleware from './middlewares/DemoMiddleware';
 import Server from './app/Server';
@@ -23,7 +22,16 @@ Injector.setup({
   },
   staticFiles: {
     path: '/',
-    directory: ['public']
+    directory: ['public'],
+    rateLimitOptions: {
+      windowMs: 5 * 60 * 1000,
+      max: 100,
+      message: {
+        message: 'Too many requests, please try again later.',
+        success: false,
+        status: 429
+      }
+    }
   },
   errorHandler: undefined /* If undefined, the default error handler will be used. */,
   notFoundHandler: undefined /* If undefined, the default not found handler will be used. */

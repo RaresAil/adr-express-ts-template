@@ -14,8 +14,8 @@ import {
   Response as ExpressResponse
 } from 'express';
 
-import DemoResponder from '../responders/DemoResponder';
-import DemoDomain from '../domain/DemoDomain';
+import DemoResponder from '../../responders/DemoResponder';
+import DemoDomain from '../../domain/DemoDomain';
 
 @Action('/demo')
 export default class DemoAction {
@@ -38,7 +38,7 @@ export default class DemoAction {
 
   @Get()
   public err(@Next next: NextFunction): any {
-    return next('Testing');
+    return next('Da');
   }
 
   @Post()

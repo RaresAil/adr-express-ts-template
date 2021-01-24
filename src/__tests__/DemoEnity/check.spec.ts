@@ -1,5 +1,6 @@
+import { Injector } from 'adr-express-ts';
 import { expect } from 'chai';
-import { Injector } from '../../../../adr-express-ts/lib';
+
 import DemoEntity from '../../domain/entities/DemoEntity';
 
 describe('Check if entity was loaded', () => {
