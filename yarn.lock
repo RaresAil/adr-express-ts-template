@@ -122,10 +122,10 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-adr-express-ts@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/adr-express-ts/-/adr-express-ts-1.0.0.tgz#624bf230249a160bfc8796c939c40a34482fff61"
-  integrity sha512-Oi3f6DawUsWZ4TmtZBpugSt9r5WFO7oAk5tirG8hRv4FsV09ndIUDRS+tgsaccfiJ3ifkaGey1er5x4HFu1q3g==
+adr-express-ts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/adr-express-ts/-/adr-express-ts-1.1.0.tgz#db625efc21604a96667480a6c28f075aecc9e9ff"
+  integrity sha512-Y7aJdqsh4Wagf22vMtAcDxUW0eK3AGmDKcn1ywQGSqDlhf/5x4/00kR/SsKgAtcoJ1no3pvvlT7LfXji9KWmiQ==
   dependencies:
     async-lock "^1.2.8"
     express "^4.17.1"
