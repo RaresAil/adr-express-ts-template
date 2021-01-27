@@ -9,8 +9,6 @@
     "dev": "nodemon src/index.ts",
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "adr-express-ts": "^1.1.1",
     "body-parser": "^1.19.0"
