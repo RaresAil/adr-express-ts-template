@@ -4,7 +4,7 @@ const { readdir } = require('fs').promises;
 const tsconfig = require('./tsconfig.json');
 
 (async () => {
-  const src = join(__dirname, 'src');
+  const src = join(__dirname, tsconfig.compilerOptions.rootDir);
 
   const getFiles = async (dir, root) => {
     const dirents = await readdir(dir, { withFileTypes: true });
@@ -36,6 +36,9 @@ const tsconfig = require('./tsconfig.json');
       });
     }
 
-    copyFileSync(join(__dirname, 'src', file), join(fullDir, fileName));
+    copyFileSync(
+      join(__dirname, tsconfig.compilerOptions.rootDir, file),
+      join(fullDir, fileName)
+    );
   });
 })();

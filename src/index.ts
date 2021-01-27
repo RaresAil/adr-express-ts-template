@@ -14,7 +14,7 @@ const expressApp = Express();
 // Variables -> Middlwares -> Functions Results -> Functions -> Classes
 
 Injector.setup({
-  root: __dirname,
+  rootFile: __filename,
   apiPrefix: '/api',
   debug: {
     log: console.log,
