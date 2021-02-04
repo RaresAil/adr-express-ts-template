@@ -17,7 +17,7 @@
     "@types/async-lock": "^1.1.2",
     "@types/express": "^4.17.11",
     "@types/mocha": "^8.2.0",
-    "@types/node": "^14.14.22",
+    "@types/node": "^14.14.24",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "mocha": "^8.2.1",
