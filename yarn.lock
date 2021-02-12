@@ -122,14 +122,14 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-adr-express-ts@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/adr-express-ts/-/adr-express-ts-1.1.4.tgz#6920b817c108c0af51290f64adc113bcbcfe3d4a"
-  integrity sha512-/hNF3EVZ2qc3oScJOghj4qA2OUlfsjz+DlcIcBmyvfCXgFzL9Q6H3bOWpJzSX+RlYolCvKDImSeeOOIDhXlerg==
+adr-express-ts@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/adr-express-ts/-/adr-express-ts-1.1.5.tgz#21d4718867e21c9e2a2336d472b408d274c6cdf1"
+  integrity sha512-ipNHRs2yu+2OQGLKB/hz41aXNp0X/Psq1J098xHYfOdMxN8WkSf8Pcm9uONDQ72wUvADpDreLm6saSP4WRDfpw==
   dependencies:
     async-lock "^1.2.8"
     express "^4.17.1"
-    express-rate-limit "^5.2.3"
+    express-rate-limit "^5.2.5"
 
 ansi-align@^3.0.0:
   version "3.0.0"
@@ -641,10 +641,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express-rate-limit@^5.2.3:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-5.2.3.tgz#ae73b3dc723decd697797611bd96e9b34a912f6c"
-  integrity sha512-cjQH+oDrEPXxc569XvxhHC6QXqJiuBT6BhZ70X3bdAImcnHnTNMVuMAJaT0TXPoRiEErUrVPRcOTpZpM36VbOQ==
+express-rate-limit@^5.2.5:
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-5.2.5.tgz#956fde02aaf28724c0fd01b932986baa35143ece"
+  integrity sha512-fv9mf4hWRKZHVlY8ChVNYnGxa49m0zQ6CrJxNiXe2IjJPqicrqoA/JOyBbvs4ufSSLZ6NTzhtgEyLcdfbe+Q6Q==
 
 express@^4.17.1:
   version "4.17.1"

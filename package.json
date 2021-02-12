@@ -10,7 +10,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "adr-express-ts": "^1.1.4",
+    "adr-express-ts": "^1.1.5",
     "body-parser": "^1.19.0"
   },
   "devDependencies": {
