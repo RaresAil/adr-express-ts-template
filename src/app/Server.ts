@@ -24,9 +24,10 @@ export default class Server implements InjectedClass {
 
       // __EADIT_CLI_PLACEHOLDER_BEFORE_SERVER_START
 
-      this.application.listen(4000, '0.0.0.0', async () => {
+      const port = process.env.NODE_ENV === 'production' ? 80 : 4000;
+      this.application.listen(port, '0.0.0.0', async () => {
         this.application!.emit('ready', true); // -- For Tests
-        log('Server started %o', '0.0.0.0:4000');
+        log('Server started %o', `0.0.0.0:${port}`);
       });
     } catch (e) {
       const error = this.config?.debug.error ?? console.error;
