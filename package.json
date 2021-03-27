@@ -10,14 +10,14 @@
     "test": "mocha"
   },
   "dependencies": {
-    "adr-express-ts": "^1.2.1",
+    "adr-express-ts": "^1.2.2",
     "body-parser": "^1.19.0"
   },
   "devDependencies": {
     "@types/async-lock": "^1.1.2",
     "@types/express": "^4.17.11",
     "@types/mocha": "^8.2.2",
-    "@types/node": "^14.14.35",
+    "@types/node": "^14.14.37",
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "mocha": "^8.3.2",
