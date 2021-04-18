@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@adr-express-ts/core@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@adr-express-ts/core/-/core-2.0.0.tgz#8e4284919bf78ba17506a24a85d07acd814d1fb9"
-  integrity sha512-oKhjrDpoihCS9U2m+yAWTD4XqqhYYmR4FWeOIMWstB7M3d8tl8rrnP0fhuqrQUCMXGTo4tOE3Fn+NSnRH9EFlA==
+"@adr-express-ts/core@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@adr-express-ts/core/-/core-2.0.1.tgz#19940e707d5170d2960dfee9c4a58f691727a75c"
+  integrity sha512-0hEOfcqBPAIOY0i+OwTRYYiuW0AtYc6EuRnbSI9Sc1tENXNn1VG+/QRFX9oOI8eoljNXH2qhbSKL/j/hB0rwTA==
   dependencies:
     async-lock "^1.2.8"
     express "^4.17.1"
