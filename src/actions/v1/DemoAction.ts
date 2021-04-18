@@ -6,8 +6,9 @@ import {
   Response,
   Post,
   Delete,
-  Next
-} from 'adr-express-ts';
+  Next,
+  Query
+} from '@adr-express-ts/core';
 import {
   NextFunction,
   Request as ExpressRequest,
@@ -27,18 +28,20 @@ export default class DemoAction {
 
   @Get('/demo1')
   public findAll(
+    @Query query: any,
     @Request req: ExpressRequest,
     @Response res: ExpressResponse
   ): any {
     return res.send({
       success: true,
-      test: (req as any).myData
+      test: (req as any).myData,
+      queryData: query
     });
   }
 
   @Get()
   public err(@Next next: NextFunction): any {
-    return next('Da');
+    return next('Check next v1');
   }
 
   @Post()

@@ -1,4 +1,4 @@
-import { Domain, Inject } from 'adr-express-ts';
+import { Domain, Inject } from '@adr-express-ts/core';
 
 @Inject
 @Domain('Demo')

@@ -1,5 +1,5 @@
-import { InjectedEntity } from 'adr-express-ts/lib/@types';
-import { Entity, Inject, Retrive } from 'adr-express-ts';
+import { InjectedEntity } from '@adr-express-ts/core/lib/@types';
+import { Entity, Inject, Retrive } from '@adr-express-ts/core';
 
 @Inject
 @Entity('Demo')

@@ -1,5 +1,5 @@
-import { Configuration, Inject, Retrive } from 'adr-express-ts';
-import { InjectedClass } from 'adr-express-ts/lib/@types';
+import { Configuration, Inject, Retrive } from '@adr-express-ts/core';
+import { InjectedClass } from '@adr-express-ts/core/lib/@types';
 import { Application } from 'express';
 
 // __EADIT_CLI_PLACEHOLDER_SERVER_IMPORTS

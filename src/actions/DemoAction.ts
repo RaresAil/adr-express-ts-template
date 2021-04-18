@@ -6,8 +6,10 @@ import {
   Response,
   Post,
   Delete,
-  Next
-} from 'adr-express-ts';
+  Next,
+  Params,
+  Body
+} from '@adr-express-ts/core';
 import {
   NextFunction,
   Request as ExpressRequest,
@@ -38,22 +40,28 @@ export default class DemoAction {
 
   @Get()
   public err(@Next next: NextFunction): any {
-    return next('Testing');
+    return next('Check next root');
   }
 
   @Post()
-  public async saveX(@Response res: ExpressResponse): Promise<any> {
+  public async saveX(
+    @Response res: ExpressResponse,
+    @Body body: any
+  ): Promise<any> {
     const dataFromDatabase = await this.domain!.test('parameter from action');
-    return this.responder!.demo(res, 201, dataFromDatabase);
+    return this.responder!.demo(res, 201, {
+      ...dataFromDatabase,
+      bodyFromPost: body
+    });
   }
 
   @Delete('/:id')
   public async deleteY(
-    @Request req: ExpressRequest,
+    @Params params: { id: string },
     @Response res: ExpressResponse
   ): Promise<any> {
     return this.responder!.success(res, {
-      id: req.params.id
+      id: params.id
     });
   }
 }

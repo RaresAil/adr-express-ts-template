@@ -1,5 +1,5 @@
-import { InjectType } from 'adr-express-ts/lib/@types';
-import { Injector, Router } from 'adr-express-ts';
+import { InjectType } from '@adr-express-ts/core/lib/@types';
+import { Injector, Router } from '@adr-express-ts/core';
 import bodyParser from 'body-parser';
 import Express from 'express';
 

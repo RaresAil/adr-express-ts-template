@@ -6,11 +6,15 @@ const { app } = global._testEnv;
 
 describe('POST /api/demo', () => {
   let response: ChaiHttp.Response;
+  const random = Math.floor(Math.random() * (99999 - 10000) + 10000);
 
   before((done) => {
     chai
       .request(app)
       .post('/api/demo')
+      .send({
+        key: random
+      })
       .then((res) => {
         response = res;
         done();
@@ -29,6 +33,9 @@ describe('POST /api/demo', () => {
     expect(body).to.not.be.equal(undefined);
     expect(body).to.not.be.equal(null);
     expect(body.success).to.be.equal(true);
+    expect(body.bodyFromPost).to.be.deep.equal({
+      key: random
+    });
     done();
   });
 

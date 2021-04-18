@@ -7,7 +7,7 @@ import {
   Post,
   Delete,
   Next
-} from 'adr-express-ts';
+} from '@adr-express-ts/core';
 import {
   NextFunction,
   Request as ExpressRequest,
@@ -38,7 +38,7 @@ export default class DemoAction {
 
   @Get()
   public err(@Next next: NextFunction): any {
-    return next('Da');
+    return next('Check next v2');
   }
 
   @Post()

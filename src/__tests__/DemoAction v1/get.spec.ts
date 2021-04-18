@@ -8,7 +8,7 @@ describe('GET /api/v1/demo/demo1', () => {
   let response: ChaiHttp.Response;
 
   before(async () => {
-    response = await chai.request(app).get('/api/v1/demo/demo1');
+    response = await chai.request(app).get('/api/v1/demo/demo1?key=value');
   });
 
   it('Should be successfully', async () => {
@@ -19,6 +19,9 @@ describe('GET /api/v1/demo/demo1', () => {
     expect(response.status).to.be.equal(200);
     expect(body).to.not.be.equal(undefined);
     expect(body).to.not.be.equal(null);
+    expect(body.queryData).to.be.deep.equal({
+      key: 'value'
+    });
     expect(body.success).to.be.equal(true);
   });
 

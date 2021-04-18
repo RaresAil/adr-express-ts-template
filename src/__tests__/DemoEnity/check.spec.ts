@@ -1,4 +1,4 @@
-import { Injector } from 'adr-express-ts';
+import { Injector } from '@adr-express-ts/core';
 import { expect } from 'chai';
 
 import DemoEntity from '../../domain/entities/DemoEntity';
