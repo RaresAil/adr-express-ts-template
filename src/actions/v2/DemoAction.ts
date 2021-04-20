@@ -1,7 +1,7 @@
 import {
   Action,
   Get,
-  Retrive,
+  Retrieve,
   Request,
   Response,
   Post,
@@ -19,10 +19,10 @@ import DemoDomain from '../../domain/DemoDomain';
 
 @Action('/demo')
 export default class DemoAction {
-  @Retrive('Responder.Demo')
+  @Retrieve('Responder.Demo')
   private responder?: DemoResponder;
 
-  @Retrive('Domain.Demo')
+  @Retrieve('Domain.Demo')
   private domain?: DemoDomain;
 
   @Get('/demo1')

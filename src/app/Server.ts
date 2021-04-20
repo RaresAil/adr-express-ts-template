@@ -1,4 +1,4 @@
-import { Configuration, Inject, Retrive } from '@adr-express-ts/core';
+import { Configuration, Inject, Retrieve } from '@adr-express-ts/core';
 import { InjectedClass } from '@adr-express-ts/core/lib/@types';
 import { Application } from 'express';
 
@@ -6,10 +6,10 @@ import { Application } from 'express';
 
 @Inject
 export default class Server implements InjectedClass {
-  @Retrive('Express')
+  @Retrieve('Express')
   private application?: Application;
 
-  @Retrive('Configuration')
+  @Retrieve('Configuration')
   private config?: Configuration;
 
   // __EADIT_CLI_PLACEHOLDER_SERVER_RETRIVE

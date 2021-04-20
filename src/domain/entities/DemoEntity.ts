@@ -1,10 +1,10 @@
 import { InjectedEntity } from '@adr-express-ts/core/lib/@types';
-import { Entity, Inject, Retrive } from '@adr-express-ts/core';
+import { Entity, Inject, Retrieve } from '@adr-express-ts/core';
 
 @Inject
 @Entity('Demo')
 export default class DemoEntity implements InjectedEntity {
-  @Retrive('Mongoose')
+  @Retrieve('Mongoose')
   private mongoose?: any;
 
   // -- For Tests --
@@ -22,13 +22,13 @@ export default class DemoEntity implements InjectedEntity {
     }
 
     // Here you have to initialize your model.
-    // The order of execution is onLoad (from enities) -> onReady (from classes)
+    // The order of execution is onLoad (from entities) -> onReady (from classes)
     // Once loaded, most of the ORMs already have your model saved in a variable
     // (Mongoose have mongoose.models)
     // If you need the entity class, you can use
-    // @Retrive('Entity.{NAME_HERE}')
+    // @Retrieve('Entity.{NAME_HERE}')
     // Mongoose is not installed by default, if you need to use mongoose,
-    // in index.ts, at the variables cateogry, use
+    // in index.ts, at the variables category, use
     // Injector.inject('Mongoose', mongoose, InjectType.Variable);
 
     // e.g. there is a Mongoose model example:
