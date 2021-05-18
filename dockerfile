@@ -1,7 +1,7 @@
-FROM node:15.12.0-alpine as base
+FROM node:16.1.0-alpine3.13 as base
 WORKDIR /usr/src/app
 
-# Install the deps in temp to chache them
+# Install the deps in temp to cache them
 FROM base AS install
 # Install for testing use
 RUN mkdir -p /temp/dev

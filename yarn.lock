@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@adr-express-ts/core@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@adr-express-ts/core/-/core-2.1.2.tgz#e908de4cca6513b6fb6213122d83503b9d268f65"
-  integrity sha512-Osc1MdfA1gdHE0Jauw+m8bVIkLJONH6+WrwHVi/3aEX1EaWePH0RY57b2mABbxpEOtomObl7ZFFst0DmSl02Kw==
+"@adr-express-ts/core@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@adr-express-ts/core/-/core-2.1.3.tgz#c4e822ccdd760d501d3cab32d77d83c9d42325cc"
+  integrity sha512-JeafzNRLZw36HqQQ+FoBDmopbg1nJAGO/Jy/9Iw9C41a5Ai+dIMyZTyJHiYoMEU+WDDCPdu/OnHyuD3DEAD9rQ==
   dependencies:
     async-lock "^1.3.0"
     express "^4.17.1"
@@ -94,10 +94,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.0.tgz#557dd0da4a6dca1407481df3bbacae0cd6f68042"
   integrity sha512-YN1d+ae2MCb4U0mMa+Zlb5lWTdpFShbAj5nmte6lel27waMMBfivrm0prC16p/Di3DyTrmerrYUT8/145HXxVw==
 
-"@types/node@^15.0.2":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
-  integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
+"@types/node@^15.3.0":
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
+  integrity sha512-8/bnjSZD86ZfpBsDlCIkNXIvm+h6wi9g7IqL+kmFkQ+Wvu3JrasgLElfiPgoo8V8vVfnEi0QVS12gbl94h9YsQ==
 
 "@types/qs@*":
   version "6.9.5"
