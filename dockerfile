@@ -19,7 +19,7 @@ COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
 #RUN yarn lint # If you add eslint, uncomment this line
 RUN yarn test
-RUN yarn audit --production
+RUN yarn audit --groups dependencies
 ENV NODE_ENV=production
 RUN yarn build
 
