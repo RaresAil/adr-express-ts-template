@@ -12,7 +12,7 @@ export default class Server implements InjectedClass {
   @Retrieve('Configuration')
   private config?: Configuration;
 
-  // __EADIT_CLI_PLACEHOLDER_SERVER_RETRIVE
+  // __EADIT_CLI_PLACEHOLDER_SERVER_RETRIEVE
 
   public async onReady(): Promise<void> {
     try {
