@@ -1,12 +1,12 @@
 import { InjectType } from '@adr-express-ts/core/lib/@types';
 import { Injector, Router } from '@adr-express-ts/core';
-import rateLimit from 'express-rate-limit';
+import rateLimit from 'express-rate-limit'; // __EADIT_CLI_PLACEHOLDER_DEMO_LINE
 import bodyParser from 'body-parser';
 import Express from 'express';
 
 // __EADIT_CLI_PLACEHOLDER_IMPORTS
 
-import DemoMiddleware from './middlewares/DemoMiddleware';
+import DemoMiddleware from './middlewares/DemoMiddleware'; // __EADIT_CLI_PLACEHOLDER_DEMO_LINE
 import Server from './app/Server';
 
 const expressApp = Express();
@@ -21,6 +21,7 @@ Injector.setup({
     log: console.log,
     error: console.error
   },
+  // __EADIT_CLI_PLACEHOLDER_DEMO_GROUP_START
   staticFiles: {
     path: '/',
     directory: ['public'],
@@ -36,14 +37,17 @@ Injector.setup({
       })
     ]
   },
-  errorHandler: undefined /* If undefined, the default error handler will be used. */,
-  notFoundHandler: undefined /* If undefined, the default not found handler will be used. */
+  errorHandler:
+    undefined /* If undefined, the default error handler will be used. */,
+  notFoundHandler:
+    undefined /* If undefined, the default not found handler will be used. */
+  // __EADIT_CLI_PLACEHOLDER_DEMO_GROUP_END
 });
 
 // __EADIT_CLI_PLACEHOLDER_INJECT_VARS
 
 // Inject Middlewares
-Injector.inject('DemoMiddleware', DemoMiddleware, InjectType.Middleware);
+Injector.inject('DemoMiddleware', DemoMiddleware, InjectType.Middleware); // __EADIT_CLI_PLACEHOLDER_DEMO_LINE
 
 // This is the only variable which must be injected after the middlewares
 // Middlewares can return a promise.
@@ -57,7 +61,7 @@ Injector.inject(
     bodyParser.json(),
 
     // The injected middlewares (class middlewares) must be added as strings
-    'DemoMiddleware'
+    'DemoMiddleware' // __EADIT_CLI_PLACEHOLDER_DEMO_LINE
   ],
   InjectType.Variable
 );

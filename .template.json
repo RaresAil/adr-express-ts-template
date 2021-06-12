@@ -1,0 +1,18 @@
+{
+  "demoFiles": [
+    "middlewares/DemoMiddleware.ts",
+    "domain/entities/DemoEntity.ts",
+    "responders/DemoResponder.ts",
+    "__tests__/DemoAction v1",
+    "__tests__/DemoAction v2",
+    "actions/DemoAction.ts",
+    "domain/DemoDomain.ts",
+    "__tests__/DemoAction",
+    "__tests__/DemoEntity",
+    "__tests__/@types",
+    "__tests__/public",
+    "actions/v1",
+    "actions/v2",
+    "public"
+  ]
+}
