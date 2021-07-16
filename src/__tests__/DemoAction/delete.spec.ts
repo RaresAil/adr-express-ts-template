@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 
 import { DeleteDemoResponse } from '../@types/app';
 
-const { app } = global._testEnv;
+const { app } = (global as any)._testEnv;
 
 describe('DELETE /api/demo/:id', () => {
   let response: ChaiHttp.Response;

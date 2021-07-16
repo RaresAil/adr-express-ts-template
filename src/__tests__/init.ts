@@ -17,7 +17,7 @@ declare global {
   }
 }
 
-global._testEnv = {
+(global as any)._testEnv = {
   app
 };
 

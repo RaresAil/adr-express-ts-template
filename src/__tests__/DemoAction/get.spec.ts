@@ -2,7 +2,7 @@ import chai, { expect } from 'chai';
 
 import { GetDemoResponse } from '../@types/app';
 
-const { app } = global._testEnv;
+const { app } = (global as any)._testEnv;
 
 describe('GET /api/v1/demo/demo1', () => {
   let response: ChaiHttp.Response;
